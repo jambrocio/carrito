@@ -1,59 +1,65 @@
-# Carrito
+# 🛒 Carrito (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+Proyecto en **Angular** que implementa un carrito de compras simple como ejemplo educativo.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📋 Requisitos previos
 
-```bash
-ng serve
-```
+Antes de comenzar asegúrate de tener instalado:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- [Node.js](https://nodejs.org/) (versión LTS recomendada)
+- [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Verifica las versiones instaladas:
 
 ```bash
-ng generate component component-name
+node --version
+npm --version
+ng --version
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ⚙️ Instalación
+
+### 1. Clona el repositorio:
 
 ```bash
-ng generate --help
+git clone https://github.com/jambrocio/carrito.git
 ```
 
-## Building
+### 2. Accede al directorio del proyecto:
+```bash
+cd carrito
+```
 
-To build the project run:
+### 3. Instala las dependencias:
+```bash
+npm install
+```
 
+## 🚀 Ejecución en desarrollo
+Para levantar el servidor de desarrollo:
+```bash
+ng serve -o
+```
+
+Luego abre el navegador en:
+👉 http://localhost:4200
+
+## 🏗️ Construcción para producción
+Para compilar la aplicación optimizada:
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 📂 Estructura del proyecto
+carrito/  
+├── src/                # Código fuente principal  
+│   ├── app/            # Componentes y lógica de la aplicación  
+│   ├── assets/         # Archivos estáticos (imágenes, íconos, etc.)  
+│   └── index.html      # HTML principal  
+├── angular.json        # Configuración de Angular  
+├── package.json        # Dependencias y scripts  
+├── tsconfig.json       # Configuración de TypeScript  
+└── README.md           # Documentación del proyecto  
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
